@@ -1,0 +1,16 @@
+{
+  "setup":{
+    "size":"10",
+    "fname":"first",
+    "lname":"last",
+    "city":"city",
+
+    "gmail":{
+      "my_gmail":"myemail123142941@gmail.com"
+    },
+
+    "my_domain":{
+      "my_domain":"@domain.com"
+    }
+  }
+}
