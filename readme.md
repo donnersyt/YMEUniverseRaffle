@@ -12,7 +12,7 @@ After this, use `cd YMEUniverseRaffle` to navigate to the folder.
 
 Set up the config.json file...
 * If you're using GMAIL, enter your gmail address
-* If you have your own email domain, enter that in the domain
+* If you have your own email domain, enter that in the my_domain
 * Enter your name, city and size (UK)
 To run, you can enter 
 
