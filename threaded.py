@@ -18,12 +18,15 @@ def run(threadName):
                 random.randint(1, 99999999)) + str(randomstring) + str(base_email)
 
         postDict["email"] = email
-        post = s.get(postURL, headers=headers, params=postDict)
-        if post.status_code != 200:
-            print("Web Error Code: " +str(post.status_code))
-        else:
-            success.append(1)
-        print(str(threadName) + "\tTotal Entered: |" +str(len(success)) + "|\t\tEmail: " +str(email))
+        try:
+            post = s.get(postURL, headers=headers, params=postDict)
+            if post.status_code != 200:
+                print("Web Error Code: " +str(post.status_code))
+            else:
+                success.append(1)
+            print(str(threadName) + "\tTotal Entered: |" +str(len(success)) + "|\t\tEmail: " +str(email))
+        except:
+            pass
 
 
 
