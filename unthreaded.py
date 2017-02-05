@@ -8,7 +8,7 @@ def run():
     if gmail:
         email = base_email
         email = email.split("@")
-        email = str(str(email[0]) + "+" + str(random.randint(1,9999999999)) + str(email[1]))
+        email = str(str(email[0]) + "+" + str(random.randint(1,9999999999)) + "@" + str(email[1]))
     if not gmail:
         char_set = string.ascii_uppercase + string.digits
         randomstring = str(''.join(random.sample(char_set * 6, 6)))
